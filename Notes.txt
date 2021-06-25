@@ -1,0 +1,95 @@
+Functions:
+Functions are used to replicate a certain block of code at different parts of a program.
+eg.
+if we want to compute and print the sum of two numbers again and again where the values of those
+numbers is variable then we can use functions in place of the complete code statements.
+ie.
+int main()
+{
+    int a,b;
+cout<<"Enter the two variables";
+cin>>a>>b;
+int sum=a+b;
+cout<<sum;
+cout<<"Enter the two variables again";
+cin>>a>>b;
+sum=a+b;
+cout<<sum;
+cout<<"Enter the two variables again";
+cin>>a>>b;
+sum=a+b;
+cout<<sum;
+}
+
+we can here use a function for entering the numbers + calculating their sum + print them
+
+eg. sum() is the function for the following case ,then
+
+int main()
+{
+     sum();
+     sum();
+     sum();
+}
+
+//This can duplicate the entire code above
+
+where; 
+void sum()
+{
+    int a,b;
+    cout<<"Enter the two variables ";
+    cin>>a>>b;
+    int sum = a+b;
+    cout<<sum;
+}
+
+Now go to program1.cpp
+
+Syntax for a function:
+ 
+
+ return-type function_name( formal parameters )
+ {
+     //code body of a function
+     return value;
+ }
+
+here;
+1.return-type of the complete function and the data-type of the return value must be the same. 
+2.function_name is basically the jname of the function and could be whatever you want ,but the naming
+rules of the identifiers also applies to it. 
+3.Parameters are the values that a function needs to perform an action upon. They are completely optional.
+The parameters that are in a function are the formal parameters.
+4.return value ;//is the statement in which the function code computes a value and returns it.
+The data type of the computed value and the return-type of the function must be same.eg. 
+the calculated value is int ,then function's return type is also int.
+
+go to program2.cpp
+
+Learning more of formal and actual parameters 
+
+Formal Parameters :
+1.inside function
+2.Get worked on and produce result
+Actual Parameters :
+1.inside main
+2.Get their values copied to formal parameters on function calculating
+
+
+Call By Value v/s Call By Refrence :
+
+Call by value is when the value of the actual parameters is copied to the formal parameters and the calculations
+do only effect the formal parameters letting the actual parameters as they are.
+The values of the actual parameters don't get changed.
+go to program3.cpp
+
+Call by Refrence is when the address of the actual parameters gets copied to the formal parameters and thus the overall
+value change is changed at the memory location and hence, the value called everytime of actual parameter or formal parameter
+is same everywhere.
+go to program4.cpp
+
+Now :
+//tasks to gain max
+1.Make an advance calculator using call by value function.
+2.Make advance calculator using call by Refrence function.
